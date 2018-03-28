@@ -68,7 +68,7 @@ public class getApiStatus {
 			System.err.println(username.get(0).getText());
 			//推送报告信息到微信
 			WeChatReminder sendMsg = new WeChatReminder();
-			sendMsg.sendWeChatNewsMsg("唯医有接口出错，请检查！", message, result_name + result_time);
+			sendMsg.sendWeChatNewsMsg("有接口出错，请检查！", message, result_name + result_time);
 			
 			Assert.assertEquals(false, true, "有接口出错，请检查后再试！");
 		}
